@@ -1,0 +1,38 @@
+# Core ML
+numpy==1.24.3
+pandas==2.0.3
+scikit-learn==1.3.0
+scipy==1.11.2
+joblib==1.3.1
+
+# Explainability
+shap==0.42.1
+lime==0.2.0.1
+
+# Visualization
+matplotlib==3.7.2
+plotly==5.15.0
+dash==2.14.0
+seaborn==0.12.2
+
+# API
+flask==2.3.2
+flask-cors==4.0.0
+python-dotenv==1.0.0
+
+# Data
+pyarrow==13.0.0   # parquet support
+pyyaml==6.0
+
+# Compliance & audit
+sqlalchemy==2.0.20
+
+# Dev/test
+pytest==7.4.0
+pytest-cov==4.1.0
+black==23.7.0
+flake8==6.1.0
+
+# Notebooks
+jupyterlab==4.0.5
+ipywidgets==8.1.0

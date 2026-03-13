@@ -1,0 +1,44 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Environment
+.env
+*.env.local
+
+# Data (raw patient data never in git)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Models (large binaries)
+models/trained/*
+models/checkpoints/*
+!models/trained/.gitkeep
+!models/checkpoints/.gitkeep
+
+# Logs
+logs/*.log
+!logs/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb~
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,36 @@
+model:
+  type: "decision_tree"       # decision_tree | random_forest | logistic
+  max_depth: 4
+  min_samples_split: 20
+  random_state: 42
+
+explainability:
+  methods:
+    - shap
+    - lime
+    - counterfactuals
+  num_features: 8
+  shap_plot_type: "force"     # force | beeswarm | bar
+
+compliance:
+  audit_enabled: true
+  log_level: "INFO"
+  db_path: "medical_ai.db"
+  fairness_thresholds:
+    demographic_parity_difference: 0.10
+    equalized_odds_difference: 0.10
+
+data:
+  train_path: "data/processed/train_data.parquet"
+  test_path:  "data/processed/test_data.parquet"
+  test_size: 0.20
+  random_state: 42
+
+api:
+  host: "0.0.0.0"
+  port: 5000
+  cors_enabled: true
+
+clinical:
+  ruleset: "cardiovascular"   # cardiovascular | oncology | diabetes
+  guidelines_file: "data/raw/clinical_guidelines.json"
