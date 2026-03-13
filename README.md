@@ -62,4 +62,4 @@ by a qualified healthcare professional.
 
 ## License
 
-Research use only. See LICENSE for details.
+Research use only. See [LICENSE] for details.
